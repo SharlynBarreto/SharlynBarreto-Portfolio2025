@@ -594,6 +594,7 @@ body {
 }
 /* ------------------------------- PROJECTS SECTION ------------------------------- */
 #projects {
+    /* ontop added */
     padding: 80px 0;
     color: #fffefe; /* Default text color */
 }
@@ -618,12 +619,23 @@ body {
     padding: 0 20px; /* Optional: padding for the grid within the container */
 }
 
+@media (max-width: 600px) {
+     #projects {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .projects-list {
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
 .project-item {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    height: 350px; /* Fixed height for consistent card sizes - adjust as needed */
+    /* height: 350px; Fixed height for consistent card sizes - adjust as needed */
     background-color: #fff; /* White background for the card */
 }
 
