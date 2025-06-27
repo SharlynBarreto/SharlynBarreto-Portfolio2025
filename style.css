@@ -635,7 +635,7 @@ body {
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    /* height: 350px; Fixed height for consistent card sizes - adjust as needed */
+    height: 350px; /*Fixed height for consistent card sizes - adjust as needed */
     background-color: #fff; /* White background for the card */
 }
 
